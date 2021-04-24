@@ -371,8 +371,8 @@ p{
 }
 @media (max-width:500px) {
   .Table{
-    margin-left:3% ;
-    margin-right:3%;
+    margin-left:2% ;
+    margin-right:2%;
   } 
 }
 @media(max-width:407px){
@@ -380,8 +380,8 @@ p{
     font-size: 8px;
   }  
   .Table{
-    margin-left:1% ;
-    margin-right: 1%;
+    margin-left:0% ;
+    margin-right: 0%;
   }
 }
 @media(max-width:350px){
@@ -395,8 +395,8 @@ p{
     font-size: 6px;
   } 
   .Table{
-    margin-left:0.1% ;
-    margin-right: 0.1%;
+    margin-left:0% ;
+    margin-right: 0%;
   }
 
 }
