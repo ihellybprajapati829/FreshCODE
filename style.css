@@ -392,11 +392,11 @@ p{
     font-size: 18px;
   }
   .content-table{
-    font-size: 6px;
+    font-size: 4px;
   } 
   .Table{
-    margin-left:0% ;
-    margin-right: 0%;
+    margin-left:0.2% ;
+    margin-right: 0.2%;
   }
 
 }
