@@ -371,17 +371,20 @@ p{
 }
 @media (max-width:500px) {
   .Table{
-    margin-left:2% ;
-    margin-right:2%;
+    margin-left:1% ;
+    margin-right:1%;
   } 
+  .content-table{
+    font-size: 10px;
+  }  
 }
 @media(max-width:407px){
   .content-table{
     font-size: 6px;
   }  
   .Table{
-    margin-left:0% ;
-    margin-right: 0%;
+    margin-left:0.1% ;
+    margin-right: 0.1%;
   }
 }
 @media(max-width:350px){
