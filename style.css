@@ -364,13 +364,13 @@ p{
     margin-right:2%;
   }
   .content-table{
-    font-size: 8px;
+    font-size: 9px;
   }  
 }
 
 @media(max-width:407px){
   .content-table{
-    font-size: 6px;
+    font-size: 7px;
   }  
   .Table{
     margin-left:1% ;
