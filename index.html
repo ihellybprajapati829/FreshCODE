@@ -2,86 +2,412 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshCODE | Leaderboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshCODE | Leaderboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <link href="Freshcode.png" rel="icon">
-    <link href="Freshcode.png" rel="apple-touch-icon">
+  <link href="Freshcode.png" rel="icon">
+  <link href="Freshcode.png" rel="apple-touch-icon">
 
 </head>
+
 <body>
-    <img id="Logo" src="IEEE VGEC.png">
-    <div class="heading">
-        <h3>
-            A National Level Coding Competition
-        </h3>
-        <img id="Logo2" src="FreshCODE 1.0.png">
+  <img id="Logo" src="IEEE VGEC.png">
+  <div class="heading">
+    <h3>
+      A National Level Coding Competition
+    </h3>
+    <img id="Logo2" src="FreshCODE 1.0.png">
+  </div>
+  <br />
+  <br />
+  <div class="Table">
+    <h2>Leaderboard</h2>
+    <div class="SearchContainer" style="float: left;">
+      <table class="elementContainer">
+        <tr>
+          <td><input type="text" name="" id="myInput" placeholder="Search by UserName" onkeyup="searchFun()">
+          </td>
+          <td>
+            <i class="fa fa-search" id="icon"></i>
+          </td>
+        </tr>
+      </table>
     </div>
-    <br />
-    <br />
-    <div class="Table">
-        <h2>Leaderboard</h2>
-        <div class="Select-Box" style="float: right;">
-            <div class="dropdown-list">
-                <div class="selected-option">
-                    <p>Select<i class="fa fa-chevron-down" id="icon2"></i></p>
-                </div>
-                <div class="select-option-card">
-                    <ul>
-                        <li><a href="index.html">Phase 1</a></li>
-                        <li><a href="index.html">Phase 2</a></li>
-                        <li><a href="index.html">Phase 3</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="Select-Box" style="float: right;">
+      <div class="dropdown-list">
+        <div class="selected-option">
+          <p>Phase 1<i class="fa fa-chevron-down" id="icon2"></i></p>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <img id="Wait" src="wait.jpg"/>
-            <h2 style="text-align: center;">
-                Wait till the submission.
-            </h2>
-
-        <br/>
-        <br/>
-        <br/>    
-        <p>For any query you can contact event co-ordinators -> <strong>Nidhi Mistry </strong>: 9408603646,
-            <strong>Satyajeetsinh Parmar </strong>: 8347583853
-        </p>
-
-    </div>
-
-    <!--Footer-->
-    <div class="copyright">
-        <div class="container">
-            <div style="text-align:center;font-weight: 800;">
-                <br />
-                <div class="icons">
-                    <a href="https://www.instagram.com/ieeevgecsb/" target="_blank">
-                        <i class="fa fa-instagram"></i></a> &nbsp;
-                    <a href="http://twitter.com/ieeevgecsb" target="_blank">
-                        <i class="fa fa-twitter"></i></a> &nbsp;
-                    <a href="https://www.linkedin.com/company/ieeevgecsb" target="_blank">
-                        <i class="fa fa-linkedin-square"></i></a> &nbsp;
-                    <a href="https://www.facebook.com/ieeevgecsb" target="_blank">
-                        <i class="fa fa-facebook"></i></a> &nbsp;
-                </div>
-            </div>
-            <p>
-                © 2021 IEEE VGEC Student Branch
-            </p>
+        <div class="select-option-card">
+          <ul>
+            <li><a href="index.html">Phase 1</a></li>
+            <li><a href="2.html">Phase 2</a></li>
+            <li><a href="Wait.html">Phase 3</a></li>
+          </ul>
         </div>
+      </div>
     </div>
-    <script src="main.js"></script>
+
+
+    <table class="content-table" id="myTable">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>User Name</th>
+          <th>Score</th>
+          <th>Eligable for Phase-2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Nightmare05</td>
+          <td>140</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>raviparmar5532</td>
+          <td>120</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Drishty_Ganatra</td>
+          <td>100</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>code_dp</td>
+          <td>100</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>dhruvvavliya79</td>
+          <td>100</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Dankhara_Dhruvin</td>
+          <td>100</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>agrawalvishesh91</td>
+          <td>100</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>kms271102</td>
+          <td>95</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>patel123kashyap</td>
+          <td>95</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>pritmanvar1109</td>
+          <td>88.57</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>khush2792001</td>
+          <td>85</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>tanmayshah314</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>bhojanidhruvil11</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>rkofficial360917</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>ampaditipatel</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>arjunkargathara1</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>vpbhansali02</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>yacoder17</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>vishwanimadasu</td>
+          <td>80</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>chhaganlal_praj1</td>
+          <td>75</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>shreyash_14</td>
+          <td>72.14</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>naraharimahodha1</td>
+          <td>70</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>jenilkheni19</td>
+          <td>70</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>krinapanchal2002</td>
+          <td>68.57</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>govind_gojiya_09</td>
+          <td>62</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>nmr_12042001</td>
+          <td>60</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>umarbaadi</td>
+          <td>60</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>brindajoshi353</td>
+          <td>60</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>Pratik02</td>
+          <td>60</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>chaitanyacontac1</td>
+          <td>60</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>vorayash9028</td>
+          <td>55</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>saswatacharya141</td>
+          <td>55</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>aneri_panchal02</td>
+          <td>55</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td>manavzariya1</td>
+          <td>50</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td>manthanvaghela11</td>
+          <td>50</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>anshp45561</td>
+          <td>40.71</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>harmiravani27</td>
+          <td>40</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>makwanaparth6395</td>
+          <td>40</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>47</td>
+          <td>rameshaghera74</td>
+          <td>30</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>miralchauhan28</td>
+          <td>20</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>nayanchanchad101</td>
+          <td>20</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>parin_patel2003</td>
+          <td>20</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>aelishvirani17</td>
+          <td>20</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>naisargisharma20</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>dasabharti45</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>suriyark3342</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>CHINTAN_BELADIYA</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>jahanvi_2017</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>yoginismodi</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>hardijayani29</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>bhavya20029</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>harshvaghasiya21</td>
+          <td>0</td>
+          <td>N0</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>For any query you can contact event co-ordinators -> <strong>Nidhi Mistry </strong>: 9408603646,
+      <strong>Satyajeetsinh Parmar </strong>: 8347583853
+    </p>
+
+  </div>
+
+  <!--Footer-->
+  <div class="copyright">
+    <div class="container">
+      <div style="text-align:center;font-weight: 800;">
+        <br />
+        <div class="icons">
+          <a href="https://www.instagram.com/ieeevgecsb/" target="_blank">
+            <i class="fa fa-instagram"></i></a> &nbsp;
+          <a href="http://twitter.com/ieeevgecsb" target="_blank">
+            <i class="fa fa-twitter"></i></a> &nbsp;
+          <a href="https://www.linkedin.com/company/ieeevgecsb" target="_blank">
+            <i class="fa fa-linkedin-square"></i></a> &nbsp;
+          <a href="https://www.facebook.com/ieeevgecsb" target="_blank">
+            <i class="fa fa-facebook"></i></a> &nbsp;
+        </div>
+      </div>
+      <p>
+        © 2021 IEEE VGEC Student Branch
+      </p>
+    </div>
+  </div>
+  <script src="main.js"></script>
 
 </body>
 
